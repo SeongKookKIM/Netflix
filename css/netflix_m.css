@@ -1,0 +1,383 @@
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  /* 첫번쨰 페이지 */
+  #main_first {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg01.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+  }
+  #main_first .bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #main_first .logo_box {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 40%;
+    background-color: rgba(20, 20, 20, 0.8);
+  }
+  #main_first .logo_box img {
+    width: 300px;
+    height: 100%;
+    /* border: 1px solid red; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    transform: scale(0);
+    transition: all 1s ease;
+  }
+
+  /*@@@@@@@@@@@@@@@@@@@@ 두번쨰 페이지 */
+  #main_sec {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background: black url(../img/secmain.jpg) center bottom no-repeat;
+    background-size: 100% 60%;
+
+    position: relative;
+    top: -100vh;
+    z-index: 1;
+    /* border: 1px solid red; */
+  }
+
+  #main_sec .area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  #main_sec .area > div {
+    position: absolute;
+    opacity: 1;
+  }
+  #main_sec .area > div > img {
+    width: 100%;
+  }
+  #main_sec .area div:nth-child(1) {
+    width: 200px;
+    height: 300px;
+    background: url(../img/bg02.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background: url(../img/bg03.jpg) center bottom no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(3) {
+    width: 300px;
+    height: 400px;
+    background: url(../img/bg04.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(4) {
+    width: 200px;
+    height: 300px;
+    background: url(../img/bg05.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    background: url(../img/bg06.jpg) center bottom no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(6) {
+    width: 200px;
+    height: 300px;
+    background: url(../img/bg07.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(7) {
+    width: 200px;
+    height: 300px;
+    background: url(../img/bg08.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(8) {
+    width: 300px;
+    height: 400px;
+    background: url(../img/bg09.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .area div:nth-child(9) {
+    width: 200px;
+    height: 300px;
+    background: url(../img/bg10.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #main_sec .bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  #main_sec .header {
+    width: 100%;
+    height: 80px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+  }
+  #main_sec .header .logo {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  #main_sec .header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  #main_sec .header .lang {
+    width: 90px;
+    height: 25px;
+    /* border: 1px solid red; */
+    background: transparent;
+
+    position: absolute;
+    top: 10px;
+    left: 180px;
+  }
+  #main_sec .header .lang #kor {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: black;
+    border: transparent;
+  }
+  #main_sec .header .qna {
+    display: none;
+  }
+  /* #main_sec .header .qna {
+    position: absolute;
+    top: 90px;
+
+    left: 10px;
+  }
+  #main_sec .header .qna #qa {
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background: black;
+    border: 0.5px solid white;
+  } */
+  #main_sec .header a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+  #main_sec .header .log {
+    right: 80px;
+    transition: all 0.5s ease;
+  }
+  #main_sec .header .log:hover {
+    font-size: 20px;
+  }
+  #main_sec .header .sign {
+    right: 20px;
+    transition: all 0.5s ease;
+  }
+  #main_sec .header .sign:hover {
+    font-size: 16px;
+  }
+  #main_sec h1 {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 48px;
+
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  #main_sec h2 {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 300;
+
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  #main_sec form {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    top: 430px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  #main_sec form input {
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    /* border: transparent; */
+    /* border: 1px solid red; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    box-sizing: border-box;
+  }
+  #main_sec form .start {
+    width: 100px;
+    height: 50px;
+
+    position: absolute;
+    top: 0;
+    right: 10%;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    /* border-left: 2px solid black; */
+    border: 1px solid black;
+    cursor: pointer;
+    background: red;
+
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  #main_sec form .start > p {
+    transition: all 0.5s ease;
+  }
+  #main_sec form .start:hover p {
+    transform: scale(120%);
+    color: #fff;
+  }
+  #main_sec > p {
+    display: block;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+  }
+  #main_sec > p > span {
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #main_sec nav {
+    width: 100%;
+
+    position: absolute;
+    top: 550px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #main_sec nav ul {
+    width: 90%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #main_sec nav ul li {
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  #main_sec nav ul li:hover a {
+    font-size: 25px;
+  }
+  #main_sec nav ul li a {
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  #main_sec .qna_m {
+    position: absolute;
+    bottom: 230px;
+    left: 0;
+    right: 0;
+  }
+  #main_sec .qna_m #qa_m {
+    width: 70%;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background: black;
+    border: 0.5px solid white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #main_sec .txt_box {
+    width: 95%;
+
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+
+    font-size: 4px;
+  }
+}
